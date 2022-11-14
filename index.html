@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <h1 id="title">Calculator</h1>
+    <p id="description">yrietiyrk</p>
+    <div class="container">
+        <div class="input">
+             <input type="text"id="result" value='0'>
+        </div>
+        <div class="buttons">
+                <div class="row">
+                    <button id="clear" onclick="clr()">c</button>
+                    <button id="." onclick="show('.')">.</button>
+                    <button id="&#8592"onclick="del()">&#8592</button>
+                    <button class="btn" onclick="show('*')">*</button>
+                </div>
+                <div class="row">
+                    <button id="7" onclick="show('7')">7</button>
+                    <button id="8" onclick="show('8')">8</button>
+                    <button id="9" onclick="show('9')">9</button>
+                    <button onclick="show('/')"class="btn">/</button>
+                </div>
+                <div class="row">
+                    <button id="4" onclick="show('4')">4</button>
+                    <button id="5" onclick="show('5')">5</button>
+                    <button id="6" onclick="show('6')">6</button>
+                    <button id="subtract" onclick="show('-')" class="btn">-</button>
+                </div>
+                <div class="row">
+                    <button id="1" onclick="show('1')">1</button>
+                    <button  id="2" onclick="show('2')">2</button>
+                    <button id="3" onclick="show('3')">3</button>
+                    <button id="add" onclick="show('+')" class="btn" >+</button>
+                </div>
+                <div class="row">
+                    <button onclick="show('0')">0</button>
+                    <button onclick="show('00')">00</button>
+                    <button onclick="calculate()" class="btn" id="equal" >=</button>
+            
+                </div>
+        </div>
+    </div>
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    
+
+   
+</body>
+</html>
